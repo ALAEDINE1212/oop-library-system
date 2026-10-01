@@ -4,7 +4,7 @@
 class Item:
     def __init__(self, title: str, item_id: str):
         self.title = title  # Public property
-        self._item_id = item_id  # Protected property (Encapsulation)
+        self._uid = item_id  # MISTAKE: Renamed from _item_id!
         self.is_borrowed = False
 
     def get_details(self) -> str:
